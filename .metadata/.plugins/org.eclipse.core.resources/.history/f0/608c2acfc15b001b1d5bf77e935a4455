@@ -1,0 +1,24 @@
+package com.object;
+//field radious (int)
+
+
+public class Circle {
+	int radious;
+	
+	static double getArea(int radious) {
+		return 3.14*radious*radious;
+	}
+	static double getCircum( int radious) {
+		return 2*3.14*radious;
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Circle cir = new Circle();
+		cir.radious = 3;
+		System.out.println(cir.getArea(cir.radious));
+		System.out.println(cir.getCircum(cir.radious));
+		
+	}
+
+}

@@ -1,0 +1,40 @@
+package com.off.day1;
+
+import java.util.Arrays;
+
+public class ArrayDirection {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int[][] data ={ 
+			{1,2,3,4,5},
+			{1,2,3,4,5},
+			{1,2,3,4,5},
+			{1,2,3,4,5},
+			{1,2,3,4,5},
+		}; //사용할 배열
+
+		for(int i=0;i<data.length;i++) {
+			for(int j=0;j<data[i].length;j++) {
+				
+				System.out.print(data[i][j]+ " ");
+			}
+		System.out.println();
+		}
+		//data[2][2]를 기준으로 상하좌우 값 출력
+		for(int i=0;i<data.length;i++)
+			for(int j=0; j<data[i].length;j++) {
+					int value = data[i][j];// i,j는 현재 접근하고 있는 좌표값
+					if(i==2&j==2) {
+						System.out.println("상 : "+data[i-1][j]);
+						System.out.println("하 : "+data[i+1][j]);
+						System.out.println("좌 : "+data[i][j-1]);
+						System.out.println("우 : "+data[i][j+1]);
+						
+						
+					}
+			}
+		
+	}
+
+}

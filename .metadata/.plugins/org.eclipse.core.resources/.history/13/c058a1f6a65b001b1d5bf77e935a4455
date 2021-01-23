@@ -1,0 +1,20 @@
+package com.ssafy;
+
+public class Phone {
+	public String name = "galaxy note";
+	private int price;
+	private char color;
+	
+	public int getRealDebt() {
+		return price + 10000;
+	}
+	public Phone(String name) {
+		this.name = name;
+		System.out.println("A");
+		System.out.println(this.name);
+	}
+	public Phone() { //기본 생성자
+		System.out.println("B");
+		System.out.println(this.name);
+	}
+}

@@ -1,0 +1,113 @@
+package com.off.day1;
+
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class buliding {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		int testCase = sc.nextInt();
+
+		
+		while(testCase>0) { //аб╩С,╩С,аб©Л, аб, ©Л, абго,го,©Лго
+			int[] dx = {-1,-1,-1,0,0,1,1,1};
+			int[] dy = {-1,0,1,-1,1,-1,0,1};
+			int N = sc.nextInt();
+			int Wmax=0;
+			char[][] building = new char[N][N];
+			
+			for(int i=0;i<N;i++) {
+				for(int j=0;j<N;j++) {
+					char a = sc.next().charAt(0);
+					building[i][j] =a;
+					
+					
+				}
+				
+			}
+			//System.out.println(Arrays.deepToString(building));
+			
+			for(int i=0;i<N;i++) {
+				for(int j=0;j<N;j++) {
+					int rowcnt=0;
+					int colcnt=0;
+					int sum=0;
+					if(building[i][j]=='B') {
+						for(int k=0;k<8;k++) {
+							int nx=i+dx[k];
+							int ny=j+dy[k];
+							int cnt=0;
+							int cnt1=0;
+
+							
+							if(nx >= 0 && nx < N && ny >= 0 && ny < N) {
+								//System.out.println(building[nx][ny]);
+								if(building[nx][ny]=='G') {
+										break;
+								
+									}
+							}
+								}
+								for(int m=j;m<0;m--) {
+									if(building[i][m]=='B') {
+										rowcnt++;
+									}else break;
+									
+								}
+								for(int m=j+1;m<N;m++) {
+									if(building[i][m]=='B') {
+										rowcnt++;
+									}else break;
+									
+								}
+								for(int m=i;m<0;m--) {
+									if(building[m][j]=='B') {
+										colcnt++;
+							
+									}else break;
+									
+								}
+								
+								for(int m=i+1;m<N;m++) {
+									if(building[m][j]=='B') {
+										colcnt++;
+							
+									}else break;
+									
+								}
+								
+								sum=colcnt+rowcnt;
+								//System.out.println(sum);
+								if(sum>Wmax) {
+									Wmax = sum;
+									System.out.print(Wmax);
+									System.out.print(" "+i+" "+j);
+									System.out.println(" "+building[i][j]);
+									
+								}
+							}
+								
+							
+						
+							
+							
+							
+							}
+						}
+					
+	
+				
+		
+			System.out.println(Wmax);
+		}
+			
+			
+			
+			
+
+		sc.close();}
+	}
+
+

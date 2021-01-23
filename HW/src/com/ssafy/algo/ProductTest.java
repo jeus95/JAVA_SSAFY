@@ -1,0 +1,33 @@
+package com.ssafy.algo;
+
+public class ProductTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Tv tv = new Tv();
+		Refrigerator ref = new Refrigerator();
+		
+		tv.setName("Samsung TV");
+		tv.setNum(1);
+		tv.setAmount(3);
+		tv.setDisType("OLED");
+		tv.setPrice(10000);
+		tv.setInch(42);
+		
+		ref.setAmount(1);
+		ref.setName("Samsung Refrigerator");
+		ref.setPrice(10000);
+		ref.setVolume(40);
+		ref.setNum(1);
+		
+		System.out.println(tv.getName());
+		System.out.println(ref.getName());
+		
+		System.out.println("TV : " + tv);
+		System.out.println();
+		System.out.println("Refrigerator : " + ref);
+		
+		
+	}
+
+}

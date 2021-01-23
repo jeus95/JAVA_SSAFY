@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Extract method &apos;private static int extracted()&apos; from &apos;com.ssafy.ws01.step3.DigitTest1.main()&apos; to &apos;com.ssafy.ws01.step3.DigitTest1&apos;&#x0D;&#x0A;- Original project: &apos;HW&apos;&#x0D;&#x0A;- Method name: &apos;extracted&apos;&#x0D;&#x0A;- Destination type: &apos;com.ssafy.ws01.step3.DigitTest1&apos;&#x0D;&#x0A;- Declared visibility: &apos;private&apos;" comments="false" description="Extract method &apos;extracted&apos;" destination="0" exceptions="false" flags="786434" id="org.eclipse.jdt.ui.extract.method" input="/src&lt;com.ssafy.ws01.step3{DigitTest1.java" name="extracted" replace="false" selection="147 13" stamp="1610957015831" version="1.0" visibility="2"/>
+</session>

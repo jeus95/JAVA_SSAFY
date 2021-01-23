@@ -1,0 +1,29 @@
+package com.off.dat2;
+
+public class BookTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		BookManager bList = new BookManager();
+		Book b = new Book("1234","SSAFt","전재우","미래사",10000,"??");
+
+		Book b2 = new Book("0001","코딩테스트","재우전","삼성",100000,"코테 기본서");
+		
+		
+		//System.out.println(b.toString());
+		//System.out.println(b2); //자동으로 toString()이 호출됨
+		
+		bList.addBook(b2);
+		bList.addBook(b);
+		//bList.remove("0001");
+		
+		for(Book z : bList.getList()) {
+			if(z.getIsbn() != null) {
+				System.out.println(z);
+			}
+		}
+		System.out.println("1");
+		System.out.println(bList.searchByIsbn("1234"));
+	}
+
+}

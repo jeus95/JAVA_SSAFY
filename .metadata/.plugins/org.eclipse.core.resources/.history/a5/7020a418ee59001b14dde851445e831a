@@ -1,0 +1,13 @@
+package com.live;
+
+public class LiveDay02 {
+
+	public static void main(String[] args) {
+		String a = "SSAFY";
+		char[] ssafyArray  = new char[a.length()];
+		for(char z : ssafyArray) {
+			System.out.println(z);
+		}
+	}
+
+}

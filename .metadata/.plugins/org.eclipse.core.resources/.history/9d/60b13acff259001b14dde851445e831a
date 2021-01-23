@@ -1,0 +1,18 @@
+package com.live;
+
+public class LiveDay02 {
+
+	public static void main(String[] args) {
+		String a = "SSAFY";
+		char[] ssafyArray  = new char[a.length()];
+		for(int i=0 ; i<ssafyArray.length;i++) {
+			ssafyArray[i]= a.charAt(i);
+		}
+		
+		for(char z : ssafyArray) {
+			System.out.println(z);
+		}
+		System.out.print(Arrays.toString(ssafyArray));	
+	}
+
+}

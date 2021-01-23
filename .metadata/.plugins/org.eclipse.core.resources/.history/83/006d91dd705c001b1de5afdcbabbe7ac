@@ -1,0 +1,13 @@
+package com.singleton;
+
+public class Book {
+	private int isbn;
+	private String title;
+	private String author;
+	private String publisher;
+	private int Price;
+	private int desc;
+	
+	
+	
+}

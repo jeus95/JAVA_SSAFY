@@ -1,0 +1,15 @@
+package com.off.day1;
+
+import java.io.IOException;
+
+public class sysinTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//System.out; //표준 출력(console)
+		//System.in; //표준 입력 
+		int result = System.in.read();
+		System.out.println(result);
+	}
+
+}

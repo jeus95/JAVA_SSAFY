@@ -1,0 +1,24 @@
+package com.object;
+
+public class Car {
+	//1. data : member, field , property
+	int num;
+	String model;
+	String Owner;
+	
+	//2.method : 어떤 일을 하는 작업 단위
+	void go() {
+		System.out.println("go");
+	}
+	void stop() {
+		System.out.println("stop!!!");
+	}
+	
+	
+	//3.main() 메소드
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}
