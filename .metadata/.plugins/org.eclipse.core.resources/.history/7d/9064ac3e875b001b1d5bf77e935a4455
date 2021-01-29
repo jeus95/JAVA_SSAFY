@@ -1,0 +1,17 @@
+package com.ssafy;
+
+public class Phone {
+	public String name = "galaxy note";
+	public int price;
+	public char color;
+	
+	public int getRealDebt() {
+		return price + 10000;
+	}
+	public Phone(String name) {
+		this.name = name;
+	}
+	public Phone() { //기본 생성자
+		
+	}
+}

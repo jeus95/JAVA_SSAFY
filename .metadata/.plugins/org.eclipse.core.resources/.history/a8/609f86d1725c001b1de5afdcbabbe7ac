@@ -1,0 +1,13 @@
+package com.off.dat2;
+
+public class BookTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Book b = new Book("1234","SSAFt","전재우","미래사",10000,"??");
+		
+		System.out.println(b);
+	
+	}
+
+}

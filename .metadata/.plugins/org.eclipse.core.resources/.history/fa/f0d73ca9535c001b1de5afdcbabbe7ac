@@ -1,0 +1,8 @@
+package com.korea.seoul;
+
+public class Tommy {
+	int age = 25;
+	public void go() {
+		System.out.println("hello");
+	}
+}

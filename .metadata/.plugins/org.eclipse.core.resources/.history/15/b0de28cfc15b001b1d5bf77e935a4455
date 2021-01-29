@@ -1,0 +1,31 @@
+package com.object;
+
+public class Car {
+	//1. data : member, field , property
+	//클래스 안의 모든 메소드에서 사용 가능함
+	int num;
+	String model;
+	String owner;
+	boolean flag;
+	double d;
+	
+	//2.method : 어떤 일을 하는 작업 단위
+	void go() {
+		System.out.println("go");
+	}
+	void stop() {
+		System.out.println("stop!!!");
+	}
+	void info() {
+		System.out.println("num : "+ num);
+		System.out.println("model : "+ model);
+		System.out.println("owner : "+ owner);
+	}
+	
+	//3.main() 메소드
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

@@ -1,0 +1,31 @@
+package com.off.day1;
+
+import java.io.IOException;
+import java.util.Random;
+
+public class sysinTest {
+
+	public static void main(String[] args) throws IOException {
+		// TODO Auto-generated method stub
+		Random ran = new Random();
+		int result = ran.nextInt(10);
+		//System.out; //표준 출력(console)
+		//System.in; //표준 입력 
+		
+//		int result = System.in.read();
+
+		
+		System.out.println(result);
+//		System.out.println((char)result);
+//		
+		//키보드로 값을 입력하면 q가 바로 나오는것이 아니라 q에 대한 코드값(정수)가 입력된다.
+		//q를 타이핑 하면 113이 나온다
+		
+//		Scanner sc =new Scanner(System.in);
+//		System.out.println(sc.nextInt());; //정수를 입력 받겠다.
+//		System.out.println(sc.next()); //문자열을 입력 받겠다.
+		
+		
+	}
+
+}

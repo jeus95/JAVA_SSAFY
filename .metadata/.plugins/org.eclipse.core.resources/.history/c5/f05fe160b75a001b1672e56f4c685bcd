@@ -1,0 +1,18 @@
+package com.test;
+
+public class LottoTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int[] num = new int[6];
+		
+		for(int i; i<6;i++) {
+			num[i]=(int)(Math.random()*45)+1;
+		}
+		
+		
+		
+		
+	}
+
+}

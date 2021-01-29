@@ -1,0 +1,15 @@
+package com.off.day1;
+
+import java.util.Arrays;
+
+public class ArrayTest2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int [][] data = new int[3][3];
+		data[0][0] = 100;
+		//
+		System.out.println(Arrays.deepToString(data));
+	}
+
+}

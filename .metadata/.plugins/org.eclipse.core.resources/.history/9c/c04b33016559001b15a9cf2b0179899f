@@ -1,0 +1,51 @@
+package com.test;
+
+public class DataTypeTest {
+	//자동완성: ctrl+space bar
+	//자바 데이터 타입: 기본형, 참조형
+	public static void main(String[] args) {
+		//논리형:boolean
+		//flag: 변수(어떤 값을 저장하는 저장소)
+		boolean flag = true;//숫자는 안됨
+		
+		//byte(1) < short(2) < int(4) < long(8) < float(4) < double(8)
+		
+		//정수형
+		byte b = 127;//byte(-128 ~ 127). 1byte
+		short s = 1000; //2byte
+		int num = 100;//int: -21억 ~ 21억 . 4 byte
+		long l = 9999999;//8 byte
+		
+		b=10;
+		//b= b + 1; //정수 리터럴의 경우 연산 할떄 1을  vm이 4byte에 저장하고 있음
+		b= (byte)(b +1);
+		
+		//literal(값):정수리터럴, 실수리터럴...
+		//실수형
+		float f = 1.2f;//4 byte
+		f= 1.9; // 실수 리터럴의 경우 초기화 할때부터 vm이 8byte에 저장하고 있음
+		f = l;//ok
+		l = (long)f;
+		
+		
+		double point = 3.14;//8 byte
+		f = (float)point;//(원하는데이터 타입):type casting. 형변환 -> 큰타입데이터를 작은 타입으로 변환시 사용
+		point = f;//ok
+		
+		//문자형: 한 글자 저장
+		char code = 'a';
+		code = 'x';
+		code = 97;//글자의 code 값으로 인식
+		
+		String name = "kim";//String(문자열):참조형
+		
+		System.out.println(num);
+		System.out.println(code);//b
+		System.out.println(name);
+		
+		System.out.printf("%d\n%s\n%s\n", num, code, name);
+		
+		
+	}
+
+}

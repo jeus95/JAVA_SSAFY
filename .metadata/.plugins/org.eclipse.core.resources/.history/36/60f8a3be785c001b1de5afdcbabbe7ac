@@ -1,0 +1,43 @@
+package com.off.dat2;
+
+public class BookManager {
+	
+		Book[] bookList = new Book[100];
+		static int  cnt=0; //배열에 저장된 책의 수 
+		final int MAX=100;
+		public void addBook(String isbn, String title, String author, String publisher, int price, String desc) {
+				bookList[cnt].setIsbn(isbn);			
+				bookList[cnt].setTitle(title);			
+				bookList[cnt].setAuthor(author);			
+				bookList[cnt].setPublisher(publisher);			
+				bookList[cnt].setPrice(price);
+				bookList[cnt].setDesc(desc);
+				
+				
+		}
+		public void remove(String isbn) {
+			for(int i=0;i<cnt;i++) {
+			if(bookList[i].getIsbn().equals(isbn))
+				bookList[i].setIsbn(null);	
+				bookList[i].setTitle(null);			
+				bookList[i].setAuthor(null);			
+				bookList[i].setPublisher(null);			
+				bookList[i].setPrice(0);
+				bookList[cnt].setDesc(null);
+			}
+		}
+		
+		public Book[] getList( ) {
+			
+				return bookList;
+			
+		}
+		
+		public void searchByIsbn(String isbn) {
+			for(int i=0;i<cnt;i++) {
+				if(bookList[i].getIsbn().equals(isbn)) {
+					System.out.println(bookList[i]);
+				}
+			}
+		}
+}

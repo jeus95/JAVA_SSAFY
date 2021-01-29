@@ -1,0 +1,22 @@
+package com.off.dat2;
+
+public class BookManager {
+	
+		Book[] bManager = new Book[100];
+		static int  cnt=0;
+		public void addBook(String isbn, String title, String author, String publisher, int price, String desc) {
+				bManager[cnt].setIsbn(isbn);			
+				bManager[cnt].setTitle(title);			
+				bManager[cnt].setAuthor(author);			
+				bManager[cnt].setPublisher(publisher);			
+				bManager[cnt].setPrice(price);
+				bManager[cnt].setDesc(desc);
+				
+				
+		}
+		public void remove() {}
+		
+		public void getList( ) {}
+		
+		public void searchByIsbn() {}
+}

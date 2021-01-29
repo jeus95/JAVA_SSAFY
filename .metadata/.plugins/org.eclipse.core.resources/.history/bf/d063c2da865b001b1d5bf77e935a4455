@@ -1,0 +1,11 @@
+package com.ssafy;
+
+public class Phone {
+	public String name = "galaxy note";
+	public int price;
+	public char color;
+	
+	public int getRealDebt() {
+		return price + 1000;
+	}
+}

@@ -1,0 +1,17 @@
+package com.live;
+
+import java.util.Arrays;
+
+public class LiveDay02 {
+
+	public static void main(String[] args) {
+
+		int[] intArray = { 3, 27, 13, 8, 235, 7, 22, 9, 435, 31, 54 };
+		int[] used  = new int[10];
+		
+		for (int i = 0 ; i<intArray.length; i++) {
+			used[intArray[i]]++;
+		}
+		System.out.println(Arrays.toString(used));
+	}
+}

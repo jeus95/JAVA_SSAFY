@@ -1,0 +1,24 @@
+package com.off.dat2;
+
+import java.util.Arrays;
+
+public class BookTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		BookManager bookList = new BookManager();
+		bookList.addBook("1234","SSAFt","전재우","미래사",10000,"??");
+		bookList.addBook("0001","코딩테스트","재우전","삼성",100000,"코테 기본서");
+		
+		Arrays.toString(bookList.bookList);
+		
+		
+		//System.out.println(b.toString());
+		//System.out.println(b2); //자동으로 toString()이 호출됨
+		
+		
+		
+	
+	}
+
+}

@@ -1,0 +1,17 @@
+package com.ssafy;
+
+public class PhoneTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Phone phone = new Phone();
+		phone.name = "Galaxy Note";
+		phone.color = 'B';
+		phone.price = 10000;
+		
+		System.out.println(phone.getRealDebt());
+
+	}
+
+}
